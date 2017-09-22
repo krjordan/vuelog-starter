@@ -184,4 +184,12 @@ Once we have built out our code we're going to reformat for production and push 
 $ git checkout -b gh-pages 
 ```
 
+If we make changes to our master branch and would like to redploy we can delete the gh-pages branch with the below command and deploy again according to the above process.
+
+```
+$ git push -d origin gh-pages
+$ git branch -d gh-pages
+$ git branch
+```
+
 
