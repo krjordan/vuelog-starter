@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img src="../../static/employbl_logo.png">
+    <img src="../../static/mad_monster.svg">
     <h1 v-text="$t('home.title')"></h1>
     <p v-text="$t('home.description')"></p>
     <router-link to="/blog">

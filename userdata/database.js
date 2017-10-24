@@ -7,7 +7,7 @@ window.VUELOG_DATABASE = {
     description: `This is where I post about what I've learned in my career as a web developer. I also post tutorials and other random, but hopefully useful things, which can benefit beginners and experts alike.`,
 
     // The image displayed in site header right beside the brand.
-    logo: './static/employbl_logo.png',
+    logo: './static/mad_monster.svg',
 
     // Path to the domain root that serves your site, starts and ends with slash (`/`).
     // Set to `'/'` if your site is under domain root.
