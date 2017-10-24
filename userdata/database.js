@@ -1,10 +1,9 @@
 /* DO NOT CHANGE THE GLOBAL VARIABLE NAME */
 
 window.VUELOG_DATABASE = {
-
   config: {
     // The name of your site, will be displayed in browser tab and site header.
-    brand: {'en-US': 'My first Vuelog'},
+    brand: { 'en-US': 'My first Vuelog' },
 
     // The image displayed in site header right beside the brand.
     logo: './static/employbl_logo.png',
@@ -12,7 +11,7 @@ window.VUELOG_DATABASE = {
     // Path to the domain root that serves your site, starts and ends with slash (`/`).
     // Set to `'/'` if your site is under domain root.
     // Change this for github pages web hosting
-    base: '/vuelog-starter/', 
+    base: '/',
 
     // The path to route to when you visit `/`.
     // Set to `/home`, `/blog` or a valid path at your need.
@@ -34,7 +33,7 @@ window.VUELOG_DATABASE = {
     postsCount: 10,
 
     // Fill in the shortname to integrate Disqus with your blog.
-    disqusShortname: 'connor11528',
+    disqusShortname: '',
 
     // Fill in the account to integrate IntenseDebate with your blog.
     intenseDebateAccount: '',
@@ -52,32 +51,32 @@ window.VUELOG_DATABASE = {
 
   navigation: [
     {
-      label: {'en-US': 'Work' },
+      label: { 'en-US': 'Work' },
       type: 'page',
       path: '/page/work'
     },
     {
-      label: {'en-US': 'About' },
+      label: { 'en-US': 'About' },
       type: 'page',
       path: '/page/about'
     },
     {
-      label: {'en-US': 'Blog' },
+      label: { 'en-US': 'Blog' },
       type: 'category',
       path: '/blog'
     },
     {
-      label: {'en-US': 'Archive' },
+      label: { 'en-US': 'Archive' },
       type: 'archive',
       path: '/archive'
     },
     {
-      label: {'en-US': 'Links' },
+      label: { 'en-US': 'Links' },
       type: 'dropdown',
       path: '', // (OPTIONAL) dropdown can be routable too if you set a valid route path
       children: [
         {
-          label: {'en-US': 'LinkedIn' },
+          label: { 'en-US': 'LinkedIn' },
           type: 'outgoing', // A plain link can redirect to an in-site route or an out-going URL
           link: 'http://linkedin.com/in/connorleech'
         },
@@ -97,29 +96,29 @@ window.VUELOG_DATABASE = {
 
   pages: [
     {
-      title: {'en-US': 'Work'},
+      title: { 'en-US': 'Work' },
       slug: 'work', // corresponds to markdown file name
-      exclude: true,      // (OPTIONAL) `true` to exclude the page from archive view
-      titleless: false,   // (OPTIONAL) `true` to hide the title in page view
+      exclude: true, // (OPTIONAL) `true` to exclude the page from archive view
+      titleless: false, // (OPTIONAL) `true` to hide the title in page view
       commentless: true, // (OPTIONAL) `true` to disable comments for the page
-      draft: false        // (OPTIONAL) `true` to make the page temporarily inaccessible
+      draft: false // (OPTIONAL) `true` to make the page temporarily inaccessible
     },
     {
-      title: {'en-US': 'About'},
+      title: { 'en-US': 'About' },
       slug: 'about',
       exclude: true,
-      titleless: false,   // (OPTIONAL) `true` to hide the title in page view
-      commentless: true, // (OPTIONAL) `true` to disable comments for the page
+      titleless: false, // (OPTIONAL) `true` to hide the title in page view
+      commentless: true // (OPTIONAL) `true` to disable comments for the page
     }
   ],
 
   categories: [
     {
-      title: {'en-US': 'Documentation' },
+      title: { 'en-US': 'Documentation' },
       slug: 'docs'
     },
     {
-      title: {'en-US': 'Showcase' },
+      title: { 'en-US': 'Showcase' },
       slug: 'showcase'
     }
   ],
@@ -127,54 +126,66 @@ window.VUELOG_DATABASE = {
   posts: [
     /* 2017 */
     {
-      title: {'en-US': 'This is a sample title'},
+      title: { 'en-US': 'This is a sample title' },
       slug: 'sample',
       category: 'docs',
       date: '2017-09-22'
     },
     {
-      title: {'en-US': 'Multiple languages support'},
+      title: { 'en-US': 'Multiple languages support' },
       slug: 'multiple-languages-support',
       category: 'docs',
       date: '2017-01-24'
     },
     {
-      title: {'en-US': 'Use social commenting services'},
+      title: { 'en-US': 'Use social commenting services' },
       slug: 'use-social-commenting-services',
       category: 'docs',
       date: '2017-01-19'
     },
     {
-      title: {'en-US': 'Insert code blocks with syntax highlight' },
+      title: { 'en-US': 'Insert code blocks with syntax highlight' },
       slug: 'insert-code-blocks-with-syntax-highlight',
       category: 'docs',
       date: '2017-01-18'
     },
     {
-      title: {'en-US': 'Author posts or pages' },
+      title: { 'en-US': 'Author posts or pages' },
       slug: 'author-posts-or-pages',
       category: 'docs',
       date: '2017-01-13'
     },
 
     {
-      title: {'en-US': 'Add posts or pages' },
+      title: { 'en-US': 'Add posts or pages' },
       slug: 'add-posts-or-pages',
       category: 'docs',
       date: '2017-01-12'
     },
     {
-      title: {'en-US': 'Customize navigation menu' },
+      title: { 'en-US': 'Customize navigation menu' },
       slug: 'customize-navigation-menu',
       category: 'docs',
       date: '2017-01-11'
     },
     {
-      title: {'en-US': 'Customize the site' },
+      title: { 'en-US': 'Customize the site' },
       slug: 'customize-the-site',
       category: 'docs',
       date: '2017-01-10'
+    },
+    /* 2016 */
+    {
+      title: { 'en-US': 'File Structure of Vuelog' },
+      slug: 'file-structure-of-vuelog',
+      category: 'docs',
+      date: '2016-10-20'
+    },
+    {
+      title: { 'en-US': 'Style Examples' },
+      slug: 'style-examples',
+      category: 'docs',
+      date: '2016-10-19'
     }
   ]
-
-}
+};
