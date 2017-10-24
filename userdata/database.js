@@ -3,7 +3,8 @@
 window.VUELOG_DATABASE = {
   config: {
     // The name of your site, will be displayed in browser tab and site header.
-    brand: { 'en-US': 'My first Vuelog' },
+    brand: { 'en-US': 'My Coding Blog' },
+    description: `This is where I post about what I've learned in my career as a web developer. I also post tutorials and other random, but hopefully useful things, which can benefit beginners and experts alike.`,
 
     // The image displayed in site header right beside the brand.
     logo: './static/employbl_logo.png',
@@ -33,7 +34,7 @@ window.VUELOG_DATABASE = {
     postsCount: 10,
 
     // Fill in the shortname to integrate Disqus with your blog.
-    disqusShortname: '',
+    disqusShortname: 'ryanscodingblog',
 
     // Fill in the account to integrate IntenseDebate with your blog.
     intenseDebateAccount: '',
@@ -51,12 +52,7 @@ window.VUELOG_DATABASE = {
 
   navigation: [
     {
-      label: { 'en-US': 'Work' },
-      type: 'page',
-      path: '/page/work'
-    },
-    {
-      label: { 'en-US': 'About' },
+      label: { 'en-US': 'About Me' },
       type: 'page',
       path: '/page/about'
     },
@@ -78,17 +74,22 @@ window.VUELOG_DATABASE = {
         {
           label: { 'en-US': 'LinkedIn' },
           type: 'outgoing', // A plain link can redirect to an in-site route or an out-going URL
-          link: 'http://linkedin.com/in/connorleech'
+          link: 'http://linkedin.com/in/ryan-jordan-86712a5'
         },
         {
           label: 'GitHub',
           type: 'outgoing',
-          link: 'https://github.com/connor11528'
+          link: 'https://github.com/krjordan'
         },
         {
           label: 'Twitter',
           type: 'outgoing',
-          link: 'https://stackoverflow.com/users/1032492'
+          link: 'https://twitter.com/ryanjordandev'
+        },
+        {
+          label: 'Portfolio',
+          type: 'outgoing',
+          link: 'https://ryanjordan.me'
         }
       ]
     }
@@ -96,17 +97,9 @@ window.VUELOG_DATABASE = {
 
   pages: [
     {
-      title: { 'en-US': 'Work' },
-      slug: 'work', // corresponds to markdown file name
-      exclude: true, // (OPTIONAL) `true` to exclude the page from archive view
-      titleless: false, // (OPTIONAL) `true` to hide the title in page view
-      commentless: true, // (OPTIONAL) `true` to disable comments for the page
-      draft: false // (OPTIONAL) `true` to make the page temporarily inaccessible
-    },
-    {
       title: { 'en-US': 'About' },
       slug: 'about',
-      exclude: true,
+      exclude: false,
       titleless: false, // (OPTIONAL) `true` to hide the title in page view
       commentless: true // (OPTIONAL) `true` to disable comments for the page
     }
@@ -114,78 +107,102 @@ window.VUELOG_DATABASE = {
 
   categories: [
     {
-      title: { 'en-US': 'Documentation' },
-      slug: 'docs'
+      title: { 'en-US': 'Email' },
+      slug: 'email'
     },
     {
-      title: { 'en-US': 'Showcase' },
-      slug: 'showcase'
+      title: { 'en-US': 'Angular' },
+      slug: 'angular'
+    },
+    {
+      title: { 'en-US': 'Ghost' },
+      slug: 'ghost'
+    },
+    {
+      title: { 'en-US': 'Miscellaneous' },
+      slug: 'misc'
+    },
+    {
+      title: { 'en-US': 'Styling' },
+      slug: 'styling'
     }
   ],
 
   posts: [
     /* 2017 */
     {
-      title: { 'en-US': 'This is a sample title' },
-      slug: 'sample',
-      category: 'docs',
-      date: '2017-09-22'
+      title: { 'en-US': 'Building an Angular & Material App Part I' },
+      slug: 'building-an-angular-and-material-app-part-I',
+      category: 'angular',
+      date: '2017-03-08'
     },
     {
-      title: { 'en-US': 'Multiple languages support' },
-      slug: 'multiple-languages-support',
-      category: 'docs',
-      date: '2017-01-24'
-    },
-    {
-      title: { 'en-US': 'Use social commenting services' },
-      slug: 'use-social-commenting-services',
-      category: 'docs',
-      date: '2017-01-19'
-    },
-    {
-      title: { 'en-US': 'Insert code blocks with syntax highlight' },
-      slug: 'insert-code-blocks-with-syntax-highlight',
-      category: 'docs',
-      date: '2017-01-18'
-    },
-    {
-      title: { 'en-US': 'Author posts or pages' },
-      slug: 'author-posts-or-pages',
-      category: 'docs',
-      date: '2017-01-13'
-    },
-
-    {
-      title: { 'en-US': 'Add posts or pages' },
-      slug: 'add-posts-or-pages',
-      category: 'docs',
-      date: '2017-01-12'
-    },
-    {
-      title: { 'en-US': 'Customize navigation menu' },
-      slug: 'customize-navigation-menu',
-      category: 'docs',
-      date: '2017-01-11'
-    },
-    {
-      title: { 'en-US': 'Customize the site' },
-      slug: 'customize-the-site',
-      category: 'docs',
-      date: '2017-01-10'
+      title: { 'en-US': 'Moving to Hugo' },
+      slug: 'moving-to-hugo',
+      category: 'misc',
+      date: '2017-02-09'
     },
     /* 2016 */
     {
-      title: { 'en-US': 'File Structure of Vuelog' },
-      slug: 'file-structure-of-vuelog',
-      category: 'docs',
-      date: '2016-10-20'
+      title: { 'en-US': 'Getting Started in Web Development' },
+      slug: 'getting-started-in-web-development',
+      category: 'misc',
+      date: '2016-08-04'
     },
     {
-      title: { 'en-US': 'Style Examples' },
-      slug: 'style-examples',
-      category: 'docs',
-      date: '2016-10-19'
+      title: { 'en-US': 'Email Newsletter Adventure' },
+      slug: 'email-newsletter-adventure',
+      category: 'email',
+      date: '2016-06-01'
+    },
+    /* 2015 */
+    {
+      title: { 'en-US': 'Ghost & Docker' },
+      slug: 'ghost-docker',
+      category: 'ghost',
+      date: '2015-12-31'
+    },
+    {
+      title: { 'en-US': 'Node Email Templates' },
+      slug: 'node-email-templates',
+      category: 'email',
+      date: '2015-12-29'
+    },
+    {
+      title: { 'en-US': 'Random Quote Part II' },
+      slug: 'random-quote-part-II',
+      category: 'misc',
+      date: '2015-11-30'
+    },
+    {
+      title: { 'en-US': 'Random Quote Part I' },
+      slug: 'random-quote-part-I',
+      category: 'misc',
+      date: '2015-10-20'
+    },
+    {
+      title: { 'en-US': 'Navigation Header with Flexbox' },
+      slug: 'navigation-header-with-flexbox',
+      category: 'styling',
+      date: '2015-10-02'
+    },
+    {
+      title: { 'en-US': 'Discovering Flexbox' },
+      slug: 'discovering-flexbox',
+      category: 'styling',
+      date: '2015-09-15'
+    },
+    {
+      title: { 'en-US': 'My First Post with Ghost' },
+      slug: 'my-first-post-with-ghost',
+      category: 'ghost',
+      date: '2015-09-05'
+    },
+    {
+      title: { 'en-US': 'Up & Running with Ghost and Digital Ocean' },
+      slug: 'up-and-running-with-ghost-and-digital-ocean',
+      category: 'ghost',
+      date: '2015-09-05'
     }
   ]
 };

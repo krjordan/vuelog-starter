@@ -1,6 +1,5 @@
 <template>
   <div class="posts">
-    <h1>All Posts</h1>
     <div class="posts-body">
       <div class="post" v-for="(post, index) in dataset.posts" :key="index">
         <vuelog-renderer class="post-body" :type="'posts'" :metadata="post"></vuelog-renderer>
@@ -129,14 +128,17 @@
 </script>
 
 <style lang="stylus" scoped>
-  .posts
-    flex 1
-    display flex
-    flex-direction column
+.posts {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
 
-  .posts-body
-    flex 1
+.posts-body {
+  flex: 1;
+}
 
-  .post
-    margin-bottom 20px
+.post {
+  margin-bottom: 20px;
+}
 </style>
