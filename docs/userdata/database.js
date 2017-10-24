@@ -3,7 +3,8 @@
 window.VUELOG_DATABASE = {
   config: {
     // The name of your site, will be displayed in browser tab and site header.
-    brand: { 'en-US': 'My first Vuelog' },
+    brand: { 'en-US': 'My Coding Blog' },
+    description: `This is where I post about what I've learned in my career as a web developer. I also post tutorials and other random, but hopefully useful things, which can benefit beginners and experts alike.`,
 
     // The image displayed in site header right beside the brand.
     logo: './static/employbl_logo.png',
@@ -11,7 +12,7 @@ window.VUELOG_DATABASE = {
     // Path to the domain root that serves your site, starts and ends with slash (`/`).
     // Set to `'/'` if your site is under domain root.
     // Change this for github pages web hosting
-    base: '/vuelog-starter/',
+    base: '/',
 
     // The path to route to when you visit `/`.
     // Set to `/home`, `/blog` or a valid path at your need.
@@ -33,7 +34,7 @@ window.VUELOG_DATABASE = {
     postsCount: 10,
 
     // Fill in the shortname to integrate Disqus with your blog.
-    disqusShortname: 'connor11528',
+    disqusShortname: '',
 
     // Fill in the account to integrate IntenseDebate with your blog.
     intenseDebateAccount: '',
@@ -51,12 +52,7 @@ window.VUELOG_DATABASE = {
 
   navigation: [
     {
-      label: { 'en-US': 'Work' },
-      type: 'page',
-      path: '/page/work'
-    },
-    {
-      label: { 'en-US': 'About' },
+      label: { 'en-US': 'About Me' },
       type: 'page',
       path: '/page/about'
     },
@@ -186,6 +182,13 @@ window.VUELOG_DATABASE = {
       slug: 'style-examples',
       category: 'docs',
       date: '2016-10-19'
+    },
+    /* 2015 */
+    {
+      title: { 'en-US': 'Up & Running with Ghost and Digital Ocean' },
+      slug: 'up-and-running-with-ghost-and-digital-ocean',
+      category: 'docs',
+      date: '2015-09-05'
     }
   ]
 };

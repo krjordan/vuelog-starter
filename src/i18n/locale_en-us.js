@@ -1,6 +1,7 @@
 const enUS = {
   home: {
-    description: 'Welcome to the home page',
+    title: 'My Coding Blog',
+    description: `This is where I post about what I've learned in my career as a web developer. I also post tutorials and other random, but hopefully useful things, which can benefit beginners and experts alike.`,
     download: 'Download v{0}',
     github: 'GitHub'
   },
