@@ -291,7 +291,7 @@
     transition color .3s ease
 
     &:hover
-      color #4fc08d
+      color #0277bd
       text-decoration none
 
   .content-meta

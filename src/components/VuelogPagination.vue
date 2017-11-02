@@ -60,12 +60,12 @@
 
     a
       background #fff
-      box-shadow inset 0 0 0 1px #4fc08d
-      color #4fc08d
+      box-shadow inset 0 0 0 1px #0277bd
+      color #0277bd
 
       &:hover
         background #fcfcfc
-        color #5dc596
+        color #0277bd
 
     span
       background #bdc3c7

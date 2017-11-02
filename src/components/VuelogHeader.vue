@@ -159,10 +159,12 @@
       color #7f8c8d
       font-size 15px
       font-weight 400
+      transition: none
+      border: none
 
       &:hover
       &.router-link-active
-        border-bottom 3px solid #42b983
+        border-bottom 3px solid #0277bd
         padding-bottom 2px
 
       &.router-link-active
@@ -187,9 +189,9 @@
       display block
       font-size .9em
       padding 0 1.4em
-    
+
       &:hover
-        color #42b983
+        color #0277bd
         border-bottom none
         padding 0 1.4em
 
@@ -299,7 +301,7 @@
 
       a:hover
       a.router-link-active
-        color #42b983
+        color #0277bd
         padding-bottom 0
 
       a.router-link-active
