@@ -131,6 +131,12 @@ window.VUELOG_DATABASE = {
   posts: [
     /* 2017 */
     {
+      title: { 'en-US': 'Pre-Render Your Angular App' },
+      slug: 'pre-render-your-angular-app',
+      category: 'angular',
+      date: '2017-10-17'
+    },
+    {
       title: { 'en-US': 'Building an Angular & Material App Part I' },
       slug: 'building-an-angular-and-material-app-part-I',
       category: 'angular',

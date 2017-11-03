@@ -6,4 +6,4 @@ I’m a full-time web developer living in Huntsville, AL. I started in web devel
 
 If you have a project that you need help with, I’d love to help out! You can message me on [Twitter](https://twitter.com/ryanjordandev) or shoot me an email at [RyJordan@Gmail.com](mailto:ryjordan@gmail.com).
 
-~Mad Monster by Symbolon from the Noun Project~
+\* *Mad Monster by Symbolon from the Noun Project*
